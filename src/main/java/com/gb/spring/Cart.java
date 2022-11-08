@@ -25,9 +25,9 @@ public class Cart {
         products.add(product);
     }
 
-    public void DelProduct(int id) {
+    public void RemoveProduct(int id) {
         for (int i = 0; i < products.size(); i++) {
-            if (products.get(i).getId() == id) {
+            if (products.get(i).getProdictId() == id) {
                 products.remove(i);
             }
         }
